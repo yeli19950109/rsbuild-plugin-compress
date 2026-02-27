@@ -6,7 +6,7 @@
   "author": "",
   "type": "module",
   "scripts": {
-    "build": "tsdown"
+    "build": "tsdown && tsc"
   },
   "devDependencies": {
     "@rsbuild/core": "^1.7.3",

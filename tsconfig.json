@@ -6,11 +6,11 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "isolatedDeclarations": true,
-    "moduleResolution": "bundler"
+    "moduleResolution": "bundler",
+    "emitDeclarationOnly": true,
+    "composite": true
   },
   "include": [
-    "compress.ts",
-    "tsdown.config.ts"
+    "compress.ts"
   ]
 }
