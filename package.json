@@ -1,6 +1,6 @@
 {
   "name": "rsbuild-plugin-compress",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "license": "ISC",
   "author": "",
@@ -23,6 +23,7 @@
     "./package.json": "./package.json"
   },
   "files": [
+    "compress.js",
     "compress.worker.js",
     "compress.d.ts"
   ],
