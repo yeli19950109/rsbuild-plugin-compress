@@ -1,27 +1,30 @@
 {
   "name": "rsbuild-plugin-compress",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "license": "ISC",
   "author": "",
   "type": "module",
   "scripts": {
-    "build": "tsdown && tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@rsbuild/core": "^1.7.3",
     "@rspack/core": "^1.7.6",
     "@types/node": "^25.3.2",
-    "tsdown": "^0.20.3",
     "typescript": "^5.9.3"
   },
   "exports": {
-    ".": "./compress.mjs",
+    ".": {
+      "types": "./compress.d.ts",
+      "import": "./compress.js"
+    },
     "./package.json": "./package.json"
   },
   "files": [
-    "compress.mjs",
-    "compress.worker.js"
+    "compress.worker.js",
+    "compress.d.ts"
   ],
   "publishConfig": {
     "access": "public",

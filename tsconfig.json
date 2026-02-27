@@ -7,8 +7,9 @@
     "strict": true,
     "skipLibCheck": true,
     "moduleResolution": "bundler",
-    "emitDeclarationOnly": true,
-    "composite": true
+    "composite": true,
+    "erasableSyntaxOnly": true,
+    "isolatedDeclarations": true
   },
   "include": [
     "compress.ts"
